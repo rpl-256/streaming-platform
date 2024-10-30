@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPLMEDIA - Music Streaming Platform</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">RPLMEDIA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#plugins">Music Plugins</a></li>
+                <li><a href="#upload">Upload</a></li>
+                <li><a href="#contact" id="contactBtn" class="button">Contact Us</a></li>
+                <li><a href="#signup" id="signupBtn" class="button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to RPLMedia 🎶</h2>
+            <p>Dive into a world of endless music. Discover new artists, create your own playlists, and enjoy high-quality streaming anytime, anywhere.</p>
+        </section>
+        <section id="music">
+            <h2>Your Music, Your Way 🎧</h2>
+            <p>Experience personalized recommendations tailored just for you. Whether you're into pop, rock, jazz, or classical, we've got something for everyone.</p>
+            <div id="musicList"></div>
+            <h3>Discover</h3>
+            <div class="music-info">
+                <h4>Artists</h4>
+                <ul id="artistList"></ul>
+                <div id="songLyrics" class="song-lyrics"></div>
+            </div>
+            <div class="music-info">
+                <h4>Genres</h4>
+                <ul id="genreList"></ul>
+            </div>
+            <div class="music-info">
+                <h4>Playlists</h4>
+                <ul id="playlistList"></ul>
+            </div>
+        </section>
+        <section id="plugins">
+            <h2>Join the RPLMedia Community 🌟</h2>
+            <p>Connect with fellow music lovers, share your favorite tracks, and stay updated with the latest hits and trends.</p>
+            <div class="plugin">
+                <h4><i class="fas fa-volume-up"></i> Soundcloud</h4>
+                <p>Integrate and share your music with the world through Soundcloud.</p>
+                <a href="https://soundcloud.com" class="button">Visit Soundcloud</a>
+            </div>
+            <div class="plugin">
+                <h4><i class="fas fa-music"></i> Spotify</h4>
+                <p>Stream millions of songs and create your own playlists.</p>
+                <a href="https://spotify.com" class="button">Visit Spotify</a>
+            </div>
+            <div class="plugin">
+                <h4><i class="fas fa-headphones-alt"></i> Bandcamp</h4>
+                <p>Discover new music and support artists directly.</p>
+                <a href="https://bandcamp.com" class="button">Visit Bandcamp</a>
+            </div>
+            <div class="plugin">
+                <h4><i class="fas fa-file-audio"></i> Mixcloud</h4>
+                <p>Create and share your own mixes and radio shows.</p>
+                <a href="https://mixcloud.com" class="button">Visit Mixcloud</a>
+            </div>
+        </section>
+        <section id="upload">
+            <h2>High-Fidelity Streaming 🎵</h2>
+            <p>Enjoy crystal-clear sound quality with our high-fidelity streaming. Feel every beat and note like never before.</p>
+            <input type="file" id="fileInput" class="file-input" accept="audio/*">
+            <button id="uploadBtn" class="button">Upload</button>
+        </section>
+        <section id="contact" style="display:none;">
+            <h2>Support Your Favorite Artists 🎤</h2>
+            <p>Stream, share, and support the artists you love. RPLMedia ensures fair revenue sharing to help artists thrive.</p>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" id="contactName" required>
+                <input type="email" placeholder="Your Email" id="contactEmail" required>
+                <textarea placeholder="Your Message" id="contactMessage" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+        <section id="signup" style="display:none;">
+            <h2>Offline Playback 📲</h2>
+            <p>No internet? No problem! Download your favorite tracks and listen offline, anytime, anywhere.</p>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" placeholder="Username" id="signupUsername" required>
+                <input type="email" placeholder="Email" id="signupEmail" required>
+                <input type="password" placeholder="Password" id="signupPassword" required>
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+            <h3>Existing User? <a href="#" id="showLogin">Login here</a></h3>
+            <div id="loginContainer" style="display:none;">
+                <h2>Stay Tuned with RPLMedia 📻</h2>
+                <p>Get the latest updates, exclusive releases, and special offers. Sign up for our newsletter and never miss a beat.</p>
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" id="loginUsername"><br>
+                <input type="password" placeholder="Password" id="loginPassword"><br>
+                <button id="submitLogin" class="button">Login</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 RPLMEDIA</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
